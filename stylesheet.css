@@ -1,0 +1,65 @@
+body {
+    background-color: #212121;
+}
+  
+h1 {
+    color: #008282;
+    text-align: center;
+    font-size: 64;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+    color: #008282;
+    margin-left: 8.3333%;
+    margin-right: 8.3333;
+    font-size: 40;
+    line-height: 0.75;
+    font-family: sans-serif;
+}
+
+h3 {
+    color: #F9F5FF;
+    margin-left: 21.3889%;
+    margin-right: 21.3889%;
+    font-size: 36;
+    font-family: sans-serif;
+}
+
+p {
+    color: #F9F5FF;
+    margin-left: 15.4166667%;
+    margin-right: 15.4166667%;
+    font-size: 24;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* unvisited link */
+a:link {
+    color: #3ad5ff;
+}
+  
+/* visited link */
+ a:visited {
+    color: #0782bf;
+}
+
+/* Bullet point */
+li::marker {
+    color: #F9F5FF;
+}
+
+#doormat {
+    line-height: 256px;
+    background-image: url(assets/images/spots.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#newsletter {
+    background-image: url(assets/images/wisconsin.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
