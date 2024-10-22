@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <title>Art Prices</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
 </head>
 <body> <!-- all of the content that is visible on your webpage goes into body -->
     <header>
@@ -17,7 +18,53 @@
         <h1>Hex's Art Prices</h1>
     </header>
     <main>
-        
+        <h2>Prices are on a per-character basis</h2>
+        <h3>Frame</h3>
+        <p>
+            Fullbody - $30 per character<br>
+            Waist-up - $?? per character<br>
+            
+            <button>Fullbody</button>
+            $30 per character<br>
+            <button>Waist-up</button>
+            $20 per character<br>
+            <button>Head</button>
+            $10 per character
+        </p>
+        <h3>Coloration</h3>
+        <p>
+            Color - +$10 per character<br>
+            Shading - +$?? per character
+        </p>
+        <div>
+            <h3>Number of characters:</h3>
+            <p>
+                <input type="number" name="Number of characters:" id="amountOfPeople">
+            </p>
+            
+            <h3>Art Type</h3>
+            <p>
+                <button>Standard</button>
+                Choice of brushes for line art and coloration.<br>
+                <button>Sketch</button>
+                Pencil brush, art will be a cleaned-up sketch. 10% discount of final cost.<br>
+                <button>OPTION</button>
+                DESCRIPTION<br>
+            </p>
+
+            <h3>Options</h3>
+            <p>
+                <label>
+                    <input type="checkbox" name="coloration" id="coloration">
+                    Coloration
+                </label>
+                <label>
+                    <input type="checkbox" name="shading" id="shading">
+                    Shading
+                </label>
+            </p>
+            <h1>Price:</h1>
+        </div>
     </main>
     <footer>
         <p><a href="index.html">Back to HOME.</a></p>

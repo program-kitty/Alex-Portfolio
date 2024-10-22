@@ -1,8 +1,12 @@
 body {
     background-color: #212121;
     margin: 0;
+    color: #F9F5FF;
+    font-size: 24;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-  
+
+/* Text */
 h1 {
     color: #008282;
     text-align: center;
@@ -13,45 +17,62 @@ h1 {
 h2 {
     color: #008282;
     margin-left: 8.3333%;
-    margin-right: 8.3333;
+    margin-right: 8.3333%;
     font-size: 40;
     line-height: 0.75;
     font-family: sans-serif;
 }
 
 h3 {
-    color: #F9F5FF;
-    margin-left: 21.3889%;
-    margin-right: 21.3889%;
+    margin-left: 12%;
+    margin-right: 12%;
     font-size: 36;
     font-family: sans-serif;
 }
 
 p {
-    color: #F9F5FF;
     margin-left: 15.4166667%;
     margin-right: 15.4166667%;
-    font-size: 24;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* unvisited link */
 a:link {
     color: #3ad5ff;
-    font-size: 24;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
   
 /* visited link */
  a:visited {
     color: #0782bf;
-    font-size: 24;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Bullet point */
-li::marker {
+/* Button */
+button {
+    background-color: #008282;
+    border-color: #008282;
     color: #F9F5FF;
+    border-radius: 4px;
+    border-style: solid;
+    font-size: 20px;
+    margin: 4px;
+    padding: 0px 8px;
+}
+
+/* Less important button */
+button {
+    background-color: #212121;
+    border-color: #008282;
+    color: #008282;
+}
+
+/* Active button */
+button:checked {
+    color: #F9F5FF;
+    background-color: #008282;
+    border-style: inset;
+}
+
+input:enabled {
+    border-style: groove;
 }
 
 #doormat {
@@ -121,6 +142,13 @@ li::marker {
     padding: 0 4px;
 }
 
+.odd {
+    border-color: #008282;
+    border-width: 2px;
+    border-style: dashed;
+    border-bottom-style: none;
+}
+
 .column img {
     margin-top: 4px;
     vertical-align: middle;
@@ -143,4 +171,41 @@ article h3{
     margin-top: 0;
     text-align: match-parent;
     text-wrap: wrap;
+}
+
+/* Grid/Flex practice */
+.article-flex {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.article-grid {
+    border-color: #008282;
+    border-width: 2px;
+    border-style: solid;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.article-grid img {
+    width: 100%;
+}
+#article-1 {
+    /* First value is where it starts on grid, the second value is how much it spans. */
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+
+#article-2 {
+    /* First value is where it starts on grid, the second value is how much it spans. */
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+#article-3 {
+    /* First value is where it starts on grid, the second value is how much it spans. */
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
 }
