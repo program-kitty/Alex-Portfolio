@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <title>Testing Page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="index.html"> Logo </a>
+            <menu>
+                <!-- Direct children should only be list items -->
+                <li>
+                    <a href="">Link to Page</a>
+                </li>
+                <li class="dropdown-trigger">
+                    <button>Dropdown Label</button>
+                    <menu class="dropdown">
+                        <li>
+                            <a href="">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="">Page 3</a>
+                        </li>
+                    </menu>
+
+                </li>
+                
+            </menu>
+        </nav>
+    </header>
+    <main>
+        <li>
+            <a href="" class="primary-button">Primary Button</a>
+        </li>
+        <li>
+            <!-- Buttons -->
+            <button>Primary Button</button>
+            <button class="lesser-button">Lesser Button</button>
+        </li>
+    </main>
+</body>
+</html>

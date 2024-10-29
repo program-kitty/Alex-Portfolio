@@ -10,6 +10,22 @@
 <body> <!-- all of the content that is visible on your webpage goes into body -->
     <header>
         <nav class="topnav">
+            <menu style="padding-left: 0px;">
+                <!-- Direct children should only be list items -->
+                 <li class="dropdown-trigger">
+                    <svg viewBox="0 0 24 24" width="30px" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 7L4 7" stroke=currentColor stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 12L4 12" stroke=currentColor stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 17L4 17" stroke=currentColor stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+                    <menu class="dropdown">
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="portfolio.html">Portfolio</a> </li>
+                        <li><a href="commission-prices.html">Commission prices</a></li>
+                        <li><a href="https://sites.google.com/view/dark-snep-wiki/">Dark Snep Wiki</a></li>
+                        <li><a href="testing.html">Testing Page</a></li>
+                        <li><a href="">Page</a></li>
+                        <li><a href="">Page</a></li>
+                    </menu>
+                 </li>
+                 <li></li>
+            </menu>
             <a href="index.html">HOME</a>
             <a class="active" href="portfolio.html">PORTFOLIO</a>
             <a href="commission-prices.html">PRICES</a>
@@ -22,55 +38,52 @@
             My portfolio exists to <b>showcase</b> my work and accomplishments in the fields of art.
         </p>
         <feed> <!-- This is where all the images in the portfolio will appear. -->  
+            <h3>
+                <br><button class="lesser-button">2022 and Earlier</button>
+            </h3>
             <div class="row">
-                <!-- <div class="column">
-                    <img src="assets/images/icon3.gif" alt="">
-                    <img src="assets/images/icon3.gif" alt="">
-                    <img src="assets/images/icon3.gif" alt="">
-                    <img src="assets/images/icon3.gif" alt="">
-                </div> -->
-                <!-- <div class="column">
-                    <img src="assets/images/icon3.gif" alt="">
-                    <img src="assets/images/icon3.gif" alt="">
-                    <img src="assets/images/icon3.gif" alt="">
-                    <img src="assets/images/icon3.gif" alt="">
-                </div> -->
-                <!-- <div class="column">
-                    <img src="assets/images/icon3.gif" alt="">
-                    <img src="assets/images/icon3.gif" alt="">
-                    <img src="assets/images/icon3.gif" alt="">
-                    <img src="assets/images/icon3.gif" alt="">
-                </div> -->
-                <!-- <div class="column">
-                    <img src="assets/images/icon3.gif" alt="">
-                    <img src="assets/images/icon3.gif" alt="">
-                    <img src="assets/images/icon3.gif" alt="">
-                    <img src="assets/images/icon3.gif" alt="">
-                </div> -->
-                <div class="column">
-                    <img src="assets/images/icon3.gif" alt="">
-                    <img src="assets/images/icon3.gif" alt="">
-                    <img src="assets/images/icon3.gif" alt="">
-                    <img src="assets/images/icon3.gif" alt="">
-                </div>
-                <div class="column">
-                    <img src="assets/images/icon3.gif" alt="placeholder">
-                    <img src="assets/images/icon3.gif" alt="SIGIL">
-                    <img src="assets/images/feed/ColgTantrum.png" alt="colgate">
-                    <img src="assets/images/feed/convenient_censorship.png" alt="why is bro so freaky">
-                </div>
-                <div class="column">
-                    <img src="assets/images/feed/Dark Snep Mural v2.png" alt="Dark Snep Mural">
-                    <img src="assets/images/feed/Minmichi Bday Gift 2022.png" alt="the pengin">
-                    <img src="assets/images/feed/Blink Cloudwatching.png" alt="grass">
-                    <img src="assets/images/feed/Cauli.png" alt="fenc">
-                </div>
-                <div class="column">
-                    <img src="assets/images/feed/rileycrySIGNED.png" alt="fops">
-                    <img src="assets/images/feed/rileyded.png" alt="fops">
-                    <img src="assets/images/feed/rileymadSIGNED.png" alt="fops">
-                    <img src="assets/images/feed/rileysleepSIGNED.png" alt="fops">
-                </div>
+                <article>
+                    <a href="">
+                        <img src="assets/images/icon3.gif" alt="SIGIL">
+                    </a>
+                    <a href="">
+                        <img src="assets/images/feed/ColgTantrum.png" alt="colgate">
+                    </a>
+                    <a href="">
+                        <img src="assets/images/feed/convenient_censorship.png" alt="why is bro so freaky">
+                    </a>
+                    <a href="">
+                        <img src="assets/images/feed/Dark Snep Mural v2.png" alt="Dark Snep Mural">
+                    </a>
+                    <a href="">
+                        <img src="assets/images/feed/Minmichi Bday Gift 2022.png" alt="the pengin">
+                    </a>
+                    <a href="">
+                        <img src="assets/images/feed/Blink Cloudwatching.png" alt="grass">
+                    </a>
+                    <a onclick="">
+                        <img src="assets/images/feed/Cauli.png" alt="fenc">
+                    </a>
+                </article>
+            </div>
+            <div>
+                <article>
+                    <a href="https://media1.tenor.com/m/N48BgbCQoDUAAAAC/fox-you-have-alerted-the-fox.gif">
+                        <h3>
+                            <br><button class="lesser-button">Fops Emoji Commission</button>
+                        </h3>
+                        <img src="assets/images/feed/rileycrySIGNED.png" alt="fops">
+                    </a>
+                    <a href="https://media1.tenor.com/m/N48BgbCQoDUAAAAC/fox-you-have-alerted-the-fox.gif">
+                        <img src="assets/images/feed/rileyded.png" alt="fops">
+                    </a>
+                    <a href="https://media1.tenor.com/m/N48BgbCQoDUAAAAC/fox-you-have-alerted-the-fox.gif">
+                        <img src="assets/images/feed/rileymadSIGNED.png" alt="fops">
+                    </a>
+                    <a href="https://media1.tenor.com/m/N48BgbCQoDUAAAAC/fox-you-have-alerted-the-fox.gif">
+                        <img src="assets/images/feed/rileysleepSIGNED.png" alt="fops">
+                    </a>
+                </article>
               </div>
         </feed>
         <section>
