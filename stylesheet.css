@@ -238,7 +238,9 @@ nav svg {
 
 /* Art Gallery Layout */
 
-.container {
+
+/* Flexbox Layout */
+.img-grid-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -246,13 +248,39 @@ nav svg {
     align-items: center;
 }
 
-.container .art img {
-    /* flex: 0 0 auto; */
-    /* flex-direction: row; */
-    /* align-items: center; */
+.img-grid-container div img {
     height: 250px;
     max-width: 100%;
 }
+
+/* Grid Layout */
+/* .img-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-auto-flow: dense;
+    gap: 2px;
+    grid-template-rows: 250px;
+}
+
+.img-grid-container div {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.img-grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-grid-container img:hover {
+    object-fit: contain;
+} */
+
+/* .container .art img:active {
+    height: fit-content;
+    position: absolute;
+} */
 
 /* .container .art img {
     max-width: 100%;
