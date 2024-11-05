@@ -10,7 +10,7 @@
 <body> <!-- all of the content that is visible on your webpage goes into body -->
     <header>
         <nav class="topnav">
-            <menu style="padding-left: 0px;">
+            <menu style="padding-left: 0px;" class="mobile-only">
                 <!-- Direct children should only be list items -->
                  <li class="dropdown-trigger">
                     <svg viewBox="0 0 24 24" width="30px" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 7L4 7" stroke=currentColor stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 12L4 12" stroke=currentColor stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 17L4 17" stroke=currentColor stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
@@ -20,16 +20,13 @@
                         <li><a href="commission-prices.html">Commission prices</a></li>
                         <li><a href="https://sites.google.com/view/dark-snep-wiki/">Dark Snep Wiki</a></li>
                         <li><a href="testing.html">Testing Page</a></li>
-                        <li><a href="">Page</a></li>
-                        <li><a href="">Page</a></li>
                     </menu>
                  </li>
-                 <li></li>
             </menu>
             <a href="index.html">HOME</a>
             <a class="active" href="portfolio.html">PORTFOLIO</a>
             <a href="commission-prices.html">PRICES</a>
-            <a href="https://sites.google.com/view/dark-snep-wiki/">DARK SNEP WIKI</a>
+            <a href="https://sites.google.com/view/dark-snep-wiki/" class="desktop-only">DARK SNEP WIKI</a>
         </nav>
     </header>
     <main>
@@ -41,12 +38,12 @@
 
         <section> <!-- Art -->
             <h2>2025 Art</h2>
-            <div class="img-grid-container"> 
+            <div class="flex-container gallery"> 
                 <p>Be ready for it!</p>
-                <div></div>
+                <!-- <div></div> -->
             </div>
             <h2>2024 Art</h2>
-            <div class="img-grid-container"> 
+            <div class="flex-container gallery">
                 <div><img src="assets/images/feed/2024/Kit at War - Gonome Birthday 2024 (No Blur)(Noise).png" alt="Kit"></div>
                 <div><img src="assets/images/feed/2024/Jos.png" alt=""></div>
                 <div style="grid-row: span 2">
@@ -64,7 +61,7 @@
                 <div><img src="assets/images/feed/2024/battle cats gang.png" alt="Waffle Ryebread"></div>
             </div>
             <h2>2023 Art</h2>
-            <div class="img-grid-container">
+            <div class="flex-container gallery">
                 <p>WIP!</p>
                 <!-- <div><img src="assets/images/feed/2023/" alt=""></div>
                 <div><img src="assets/images/feed/2023/" alt=""></div>
@@ -79,7 +76,7 @@
                 <div><img src="assets/images/feed/2023/" alt=""></div> -->
             </div>
             <h2>2022 Art</h2>
-            <div class="img-grid-container"> 
+            <div class="flex-container gallery"> 
                 <div><img src="assets/images/feed/Sykleta.png" alt=""></div>
                 <div>
                     <img src="assets/images/icon3.gif" alt="SIGIL">
@@ -104,7 +101,7 @@
                 </div>
             </div>
             <h2>Emoji Set Commission - Fox</h2>
-            <div class="container">
+            <div class="flex-container gallery">
                 <div class="art">
                     <img src="assets/images/feed/rileycrySIGNED.png" alt="fops">
                 </div>

@@ -10,17 +10,30 @@
 <body> <!-- all of the content that is visible on your webpage goes into body -->
     <header>
         <nav class="topnav">
+            <menu style="padding-left: 0px;" class="mobile-only">
+                <!-- Direct children should only be list items -->
+                 <li class="dropdown-trigger">
+                    <svg viewBox="0 0 24 24" width="30px" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 7L4 7" stroke=currentColor stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 12L4 12" stroke=currentColor stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 17L4 17" stroke=currentColor stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+                    <menu class="dropdown">
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="portfolio.html">Portfolio</a> </li>
+                        <li><a href="commission-prices.html">Commission prices</a></li>
+                        <li><a href="https://sites.google.com/view/dark-snep-wiki/">Dark Snep Wiki</a></li>
+                        <li><a href="testing.html">Testing Page</a></li>
+                    </menu>
+                 </li>
+            </menu>
             <a class="active" href="index.html">HOME</a>
             <a href="portfolio.html">PORTFOLIO</a>
             <a href="commission-prices.html">PRICES</a>
-            <a href="https://sites.google.com/view/dark-snep-wiki/">DARK SNEP WIKI</a>
+            <a href="https://sites.google.com/view/dark-snep-wiki/" class="desktop-only">DARK SNEP WIKI</a>
         </nav>
     </header>
     <main>
         <doormat>
             <h1 id="doormat">Hex's Art Hub</h1>
         </doormat>
-        <div class="img-grid-container">
+        <div class="flex-container" style="flex-wrap: nowrap;">
             <div>
                 <h2>What is this site?</h2>
                 <p>
@@ -36,7 +49,7 @@
                     <a href="https://sites.google.com/view/dark-snep-wiki/">'Dark Snep' open species wiki</a>
                 </p>
             </div>
-            <div><img src="assets/images/wisconsin.png" alt="cheesed cat"></div>
+            <div class="desktop-only"><img src="assets/images/icon3.gif" alt=:SIGIL"></div>
         </div>
         
         <section>

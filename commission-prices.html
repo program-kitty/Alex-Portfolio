@@ -10,48 +10,63 @@
 <body> <!-- all of the content that is visible on your webpage goes into body -->
     <header>
         <nav class="topnav">
+            <menu style="padding-left: 0px;" class="mobile-only">
+                <!-- Direct children should only be list items -->
+                 <li class="dropdown-trigger">
+                    <svg viewBox="0 0 24 24" width="30px" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 7L4 7" stroke=currentColor stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 12L4 12" stroke=currentColor stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 17L4 17" stroke=currentColor stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+                    <menu class="dropdown">
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="portfolio.html">Portfolio</a> </li>
+                        <li><a href="commission-prices.html">Commission prices</a></li>
+                        <li><a href="https://sites.google.com/view/dark-snep-wiki/">Dark Snep Wiki</a></li>
+                        <li><a href="testing.html">Testing Page</a></li>
+                    </menu>
+                 </li>
+            </menu>
             <a href="index.html">HOME</a>
             <a href="portfolio.html">PORTFOLIO</a>
             <a class="active" href="commission-prices.html">PRICES</a>
-            <a href="https://sites.google.com/view/dark-snep-wiki/">DARK SNEP WIKI</a>
+            <a href="https://sites.google.com/view/dark-snep-wiki/" class="desktop-only">DARK SNEP WIKI</a>
         </nav>
-        <h1>Hex's Art Prices</h1>
     </header>
     <main>
-        <h2>Prices are on a per-character basis</h2>
-        <h3>Frame</h3>
-        <p>
-            Fullbody - $30 per character<br>
-            Waist-up - $?? per character<br>
-            
-            <button>Fullbody</button>
-            $30 per character<br>
-            <button>Waist-up</button>
-            $20 per character<br>
-            <button>Head</button>
-            $10 per character
-        </p>
-        <h3>Coloration</h3>
-        <p>
-            Color - +$10 per character<br>
-            Shading - +$?? per character
-        </p>
-        <div>
-            <h3>Number of characters:</h3>
-            <p>
-                <input type="number" name="Number of characters:" id="amountOfPeople">
-            </p>
-            
-            <h3>Art Type</h3>
-            <p>
-                <button>Standard</button>
-                Choice of brushes for line art and coloration.<br>
-                <button>Sketch</button>
-                Pencil brush, art will be a cleaned-up sketch. 10% discount of final cost.<br>
-                <button>OPTION</button>
-                DESCRIPTION<br>
-            </p>
-
+        <h1>Hex's Art Prices</h1>
+        <section class="flex-container " style="flex-wrap: nowrap;">
+            <div>
+                <h2>Prices are on a per-character basis</h2>
+                <h3>Frame</h3>
+                <p>
+                    <button>Fullbody</button>
+                    $30 per character<br>
+                    <button>Waist-up</button>
+                    $20 per character<br>
+                    <button>Head</button>
+                    $10 per character
+                </p>
+                <h3>Coloration</h3>
+                <p>
+                    <button>Colored Artpiece</button>
+                    +$10 per character<br>
+                    <button class="lesser-button">Shading</button>
+                    +$?? per character
+                </p>
+                <!-- <h3>Number of characters:</h3>
+                <p>
+                    <input type="number" name="Number of characters:" id="amountOfPeople">
+                </p> -->
+                <h3>Art Type</h3>
+                <p>
+                    <button>Standard</button>
+                    Choice of brushes for line art and coloration.<br>
+                    <button>Sketch</button>
+                    Pencil brush, art will be a cleaned-up sketch. 10% discount on final cost.<br>
+                    <!-- <button>OPTION</button>
+                    DESCRIPTION<br> -->
+                </p>
+            </div>
+            <div class="desktop-only"><img src="assets/images/wisconsin.png" alt="cheesed cat"></div>
+        </section>
+        <!-- <div>
             <h3>Options</h3>
             <p>
                 <label>
@@ -64,10 +79,10 @@
                 </label>
             </p>
             <h1>Price:</h1>
-        </div>
+        </div> -->
     </main>
-    <footer>
-        <p><a href="index.html">Back to HOME.</a></p>
+    <footer class="bottomnav">
+        <!-- <a href="index.html">Back to HOME</a> -->
     </footer>
 </body>
 </html>
