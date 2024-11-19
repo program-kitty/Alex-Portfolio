@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
     <title>Hex's Art Homepage</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
 </head>
 <body> <!-- all of the content that is visible on your webpage goes into body -->
     <header>
-        <nav class="topnav">
+        <nav id="topnav">
             <menu style="padding-left: 0px;" class="mobile-only">
                 <!-- Direct children should only be list items -->
                  <li class="dropdown-trigger">
@@ -30,10 +30,11 @@
         </nav>
     </header>
     <main>
-        <doormat>
-            <h1 id="doormat">Hex's Art Hub</h1>
-        </doormat>
-        <div class="flex-container" style="flex-wrap: nowrap;">
+        <section id="doormat">
+            <h1 class="desktop-only">Welcome to Hex's Art Hub!</h1>
+            <h1 class="mobile-only">Hex's Art Hub</h1>
+        </section>
+        <div class="flex-container text-container" style="flex-wrap: nowrap;">
             <div>
                 <h2>What is this site?</h2>
                 <p>
@@ -50,6 +51,10 @@
                 </p>
             </div>
             <div class="desktop-only"><img src="assets/images/icon3.gif" alt=:SIGIL"></div>
+        </div>
+
+        <div class="sensitive">
+            <p>Boo.</p>
         </div>
         
         <section>

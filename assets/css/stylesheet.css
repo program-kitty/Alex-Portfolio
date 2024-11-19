@@ -14,29 +14,29 @@ main {
 h1 {
     color: #008282;
     text-align: center;
-    font-size: 64;
+    font-size: 40pt;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h2 {
     color: #008282;
-    margin-left: 8.3333%;
-    margin-right: 8.3333%;
+    margin-left: 1rem;
+    margin-right: 1rem;
     font-size: 40;
     line-height: 0.75;
     font-family: sans-serif;
 }
 
 h3 {
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 2rem;
+    margin-right: 2rem;
     font-size: 36;
     font-family: sans-serif;
 }
 
 p {
-    margin-left: 15.4166667%;
-    margin-right: 15.4166667%;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 /* unvisited link */
@@ -72,9 +72,31 @@ button.lesser-button {
     color: #008282;
 }
 
-/* Active button */
-button:checked {
+
+/* Buttons */
+.input-div {
+    line-height: 40px;
+}
+
+input/*[type="radio"]*/ + label {
     color: #F9F5FF;
+    border-color: #bbf0ff;
+    background-color: unset;
+    border-style: outset;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 4px;
+    padding: 0px 8px;
+}
+
+input[type="radio"],input[type="checkbox"] {
+    display: none;
+}
+
+/* Active radio button */
+input/*[type="radio"]*/:checked + label {
+    color: #F9F5FF;
+    /* border-color: #008282; */
     background-color: #008282;
     border-style: inset;
 }
@@ -82,18 +104,24 @@ button:checked {
 
 
 
-input:enabled {
+/* input:enabled {
     border-style: groove;
+} */
+
+input:disabled {
+    opacity: 50%;
 }
 
 #doormat {
     margin: 0px 0px;
-    padding-top: 64px;
-    padding-bottom: 64px;
-    background-image: url(assets/images/spots.png);
+    /* padding-top: 64px;
+    padding-bottom: 64px; */
+    padding: 64px 0px;
+    background-image: url(../images/spots.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: padding .5s;
 }
 
 #newsletter {
@@ -107,7 +135,7 @@ input:enabled {
 
 /* Add a background color to the top navigation */
 
-header .topnav {
+header #topnav {
     background-color: #3ad5ff;
     overflow: hidden;
     display: flex;
@@ -118,46 +146,48 @@ header .topnav {
 }
 
 /* Style the links inside the navigation bar */
-header .topnav a {
-  color: #F9F5FF;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 10pt;
+header #topnav a {
+    color: #212121;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 10pt;
+    transition: padding .5s;
 }
 
 /* Add a color to the active/current link */
-header .topnav > a.active {
-  background-color: #008282;
-  color: #F9F5FF;
+header #topnav > a.active {
+    background-color: #008282;
+    color: #F9F5FF;
 }
   
 /* Change the color of links on hover */
-header .topnav > a:hover {
+header #topnav > a:hover {
     background-color: #bbf0ff;
     color: #212121;
+    padding: 14px 24px;
 }
 
 /* Main header navigation */
 
-header .topnav menu {
+header #topnav menu {
     margin: 0px 0px;
 }
 
-header .topnav menu li {
+header #topnav menu li {
     list-style: none;
 }
 
 /* Why do I need this? */
-header .topnav menu#main-menu {
+header #topnav menu#main-menu {
     display: flex; 
 }
 
-header .topnav menu.dropdown {
+header #topnav menu.dropdown {
     display: none;
 }
 
-header .topnav menu .dropdown-trigger:hover menu.dropdown {
+header #topnav menu .dropdown-trigger:hover menu.dropdown {
     display: block;
     position: fixed;
     border: none;
@@ -171,10 +201,10 @@ header .topnav menu .dropdown-trigger:hover menu.dropdown {
     padding: 8px 8px;
 }
 
-header .topnav menu .dropdown-trigger/*:hover*/ menu.dropdown a {
+header #topnav menu .dropdown-trigger/*:hover*/ menu.dropdown a {
     padding: 0px;
 }
-header .topnav menu .dropdown-trigger/*:hover*/ menu.dropdown a:hover {
+header #topnav menu .dropdown-trigger/*:hover*/ menu.dropdown a:hover {
     padding: 0px 5px;
 }
 
@@ -207,55 +237,6 @@ nav svg {
 
 
 
-
-
-/* .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    align-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.row a {
-    display: inline-block;
-    width: 20%;
-}
-
-.odd {
-    border-color: #008282;
-    border-width: 2px;
-    border-style: dashed;
-    border-bottom-style: none;
-}
-
-article {
-    flex-wrap: nowrap;
-    text-wrap: wrap;
-    text-align: match-parent;
-    flex: 50%;
-}
-
-article.feed {
-    margin-top: 4px;
-    vertical-align: middle;
-}
-
-article img {
-    margin: 4px;
-    vertical-align: middle;
-    max-width: 100%;
-}
-
-article h3{
-    margin-top: 0;
-    text-align: match-parent;
-    text-wrap: wrap;
-} */
-
-
-
 /* Art Gallery Layout */
 
 /* Flexbox Layout */
@@ -263,8 +244,8 @@ article h3{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .flex-container div img {
@@ -272,6 +253,44 @@ article h3{
     max-width: 100%;
     max-height: 250px;
 }
+
+.flex-container div.gallery img {
+    height: auto;
+    max-height: 250px;
+}
+
+/* Side images for non-gallery */
+.flex-container div.desktop-only {
+    margin: 8px;
+    align-self: center;
+}
+
+.flex-container div.desktop-only img {
+    border-radius: 8px;
+    width: 100%;
+    align-self: center;
+    margin: 0px;
+}
+
+
+/* Text Override */
+.flex-container.text-container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.flex-container.text-container div:first-child {
+    width: auto;
+}
+
+.flex-container.text-container div:first-child * {
+    margin-right: 0rem;
+}
+
+.flex-container.text-container div img {
+    width: auto;
+}
+
 
 /* Grid Layout */
 .grid-container {
@@ -316,6 +335,21 @@ article h3{
     flex-grow: 2;
 } */
 
+/* Sensitive Blur */
+
+.sensitive {
+    overflow: hidden;
+}
+
+.sensitive * {
+    filter: blur(8px);
+    transition: filter .5s;
+}
+
+.sensitive *:hover {
+    filter: blur(0px);
+}
+
 
 
 /* Device Breakpoint Sizes */
@@ -329,16 +363,28 @@ article h3{
 
 /* Laptop */
 @media (min-width: 769px) and (max-width: 1024px) {
+    .mobile-only {
+        display: none;
+    }
 }
 
 /* Tablet */
 @media (min-width: 481px) and (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+    #doormat {
+        padding: 20px 0px;
+    }
 }
 
 /* Mobile */
 @media (min-width: 320px) and (max-width: 480px) {
     .desktop-only {
         display: none;
+    }
+    #doormat {
+        padding: 8px 0px;
     }
 }
 
@@ -348,6 +394,12 @@ article h3{
         display: none;
     }
 }
+
+
+
+/* Button Selector */
+
+
 
 
 

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
     <title>Art Prices</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
 </head>
 <body> <!-- all of the content that is visible on your webpage goes into body -->
     <header>
-        <nav class="topnav">
+        <nav id="topnav">
             <menu style="padding-left: 0px;" class="mobile-only">
                 <!-- Direct children should only be list items -->
                  <li class="dropdown-trigger">
@@ -31,55 +31,45 @@
     </header>
     <main>
         <h1>Hex's Art Prices</h1>
-        <section class="flex-container " style="flex-wrap: nowrap;">
+        <p>Prices are on a per-character basis</p>
+        <h2>H2 MARGIN REFERENCE</h2>
+        <section class="flex-container text-container">
             <div>
-                <h2>Prices are on a per-character basis</h2>
-                <h3>Frame</h3>
-                <p>
-                    <button>Fullbody</button>
+                <h2>Frame</h2>
+                <p class="input-div">
+                    <input type="radio" id="fullbody" name="art-frame" value="Fullbody">
+                    <label for="fullbody">Fullbody</label>
                     $30 per character<br>
-                    <button>Waist-up</button>
+                    <input type="radio" id="waist-up" name="art-frame" value="Waist-up">
+                    <label for="waist-up">Waist-up</label>
                     $20 per character<br>
-                    <button>Head</button>
+                    <input type="radio" id="bust" name="art-frame" value="Head/Bust">
+                    <label for="bust">Head</label>
                     $10 per character
                 </p>
-                <h3>Coloration</h3>
-                <p>
-                    <button>Colored Artpiece</button>
-                    +$10 per character<br>
-                    <button class="lesser-button">Shading</button>
+                <h2>Coloration</h2>
+                <p class="input-div">
+                    <input type="checkbox" id="color" name="art-coloration" value="Color">
+                    <label for="color">Colored Artpiece</label>
+                    $10 per character<br>
+                    <input type="checkbox" id="shading" name="art-coloration" value="Shading">
+                    <label for="shading">Shaded Artpiece</label>
                     +$?? per character
                 </p>
                 <!-- <h3>Number of characters:</h3>
                 <p>
                     <input type="number" name="Number of characters:" id="amountOfPeople">
                 </p> -->
-                <h3>Art Type</h3>
+                <!-- <h3>Art Type</h3>
                 <p>
-                    <button>Standard</button>
+                    <button type="button">Standard</button>
                     Choice of brushes for line art and coloration.<br>
-                    <button>Sketch</button>
+                    <button type="button">Sketch</button>
                     Pencil brush, art will be a cleaned-up sketch. 10% discount on final cost.<br>
-                    <!-- <button>OPTION</button>
-                    DESCRIPTION<br> -->
-                </p>
+                </p> -->
             </div>
-            <div class="desktop-only"><img src="assets/images/wisconsin.png" alt="cheesed cat"></div>
+            <div class="desktop-only"><img src="assets/images/necoarc.jpg"></div>
         </section>
-        <!-- <div>
-            <h3>Options</h3>
-            <p>
-                <label>
-                    <input type="checkbox" name="coloration" id="coloration">
-                    Coloration
-                </label>
-                <label>
-                    <input type="checkbox" name="shading" id="shading">
-                    Shading
-                </label>
-            </p>
-            <h1>Price:</h1>
-        </div> -->
     </main>
     <footer class="bottomnav">
         <!-- <a href="index.html">Back to HOME</a> -->

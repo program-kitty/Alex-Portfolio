@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
     <title>Art Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
 </head>
 <body> <!-- all of the content that is visible on your webpage goes into body -->
     <header>
-        <nav class="topnav">
+        <nav id="topnav">
             <menu style="padding-left: 0px;" class="mobile-only">
                 <!-- Direct children should only be list items -->
                  <li class="dropdown-trigger">
@@ -37,13 +38,21 @@
         </p>
 
         <section> <!-- Art -->
-            <h2>2025 Art</h2>
-            <div class="flex-container gallery"> 
-                <p>Be ready for it!</p>
-                <!-- <div></div> -->
-            </div>
+            <!-- <h2>2025 Art</h2>
+            <div class="grid-container gallery"> 
+                <div><img src="assets/images/feed/2025/" alt=""></div>
+                <div><img src="assets/images/feed/2025/" alt=""></div>
+                <div><img src="assets/images/feed/2025/" alt=""></div>
+                <div><img src="assets/images/feed/2025/" alt=""></div>
+            </div> -->
             <h2>2024 Art</h2>
-            <div class="flex-container gallery">
+            <div class="grid-container gallery">
+                <!-- <div class="sensitive" style="grid-column: span 2; grid-row: span 2;">
+                    <img src="assets/images/feed/2024/skele-hex.png" alt="">
+                </div> -->
+                <!-- <div><img src="assets/images/feed/2024/" alt=""></div> -->
+                <div><img src="assets/images/feed/2024/" alt=""></div>
+                <div><img src="assets/images/feed/2024/" alt=""></div>
                 <div><img src="assets/images/feed/2024/Kit at War - Gonome Birthday 2024 (No Blur)(Noise).png" alt="Kit"></div>
                 <div><img src="assets/images/feed/2024/Jos.png" alt=""></div>
                 <div style="grid-row: span 2">
@@ -55,15 +64,14 @@
                 </div>
                 <div><img src="assets/images/feed/2024/Davey.png" alt="Possum"></div>
                 <div><img src="assets/images/feed/2024/Riley in Halo.png" alt="Halo Fops"></div>
-                <div style="grid-column: span 2">
-                    <img src="assets/images/feed/2024/robonyan nuke.png" alt="Yo-Kai Watch">
+                <div style="grid-column: span 3">
+                    <img id="robonyan-nuke" src="assets/images/feed/2024/robonyan nuke.png" alt="Yo-Kai Watch">
                 </div>
                 <div><img src="assets/images/feed/2024/battle cats gang.png" alt="Waffle Ryebread"></div>
             </div>
             <h2>2023 Art</h2>
-            <div class="flex-container gallery">
-                <p>WIP!</p>
-                <!-- <div><img src="assets/images/feed/2023/" alt=""></div>
+            <p>WIP!</p>
+            <!-- <div class="grid-container gallery">
                 <div><img src="assets/images/feed/2023/" alt=""></div>
                 <div><img src="assets/images/feed/2023/" alt=""></div>
                 <div><img src="assets/images/feed/2023/" alt=""></div>
@@ -73,16 +81,16 @@
                 <div><img src="assets/images/feed/2023/" alt=""></div>
                 <div><img src="assets/images/feed/2023/" alt=""></div>
                 <div><img src="assets/images/feed/2023/" alt=""></div>
-                <div><img src="assets/images/feed/2023/" alt=""></div> -->
-            </div>
+                <div><img src="assets/images/feed/2023/" alt=""></div>
+            </div> -->
             <h2>2022 Art</h2>
-            <div class="flex-container gallery"> 
+            <div class="grid-container gallery"> 
                 <div><img src="assets/images/feed/Sykleta.png" alt=""></div>
                 <div>
                     <img src="assets/images/icon3.gif" alt="SIGIL">
                 </div>
                 <div>
-                    <img src="assets/images/feed/ColgTantrum.png" alt="colgate">
+                    <img id="colgire" src="assets/images/feed/ColgTantrum.png" alt="colgate">
                 </div>
                 <div style="object-fit: contain; grid-column: span 2">
                     <img src="assets/images/feed/convenient_censorship.png" alt="why is bro so freaky">
@@ -101,7 +109,7 @@
                 </div>
             </div>
             <h2>Emoji Set Commission - Fox</h2>
-            <div class="flex-container gallery">
+            <div class="grid-container gallery">
                 <div class="art">
                     <img src="assets/images/feed/rileycrySIGNED.png" alt="fops">
                 </div>
