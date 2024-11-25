@@ -301,7 +301,7 @@ nav svg {
     grid-template-rows: 250px;
 }
 
-.grid-container div {
+.grid-container > * {
     grid-column: span 1;
     grid-row: span 1;
 }
@@ -339,15 +339,34 @@ nav svg {
 
 .sensitive {
     overflow: hidden;
+    position: relative;
 }
 
-.sensitive * {
-    filter: blur(8px);
+.sensitive > *:first-child {
+    filter: blur(4px);
     transition: filter .5s;
 }
 
-.sensitive *:hover {
+.sensitive > *:first-child:hover {
     filter: blur(0px);
+}
+
+/* Sensitive Content Warning */
+
+.sensitive .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: opacity .5s;
+    text-align: center;
+}
+
+.sensitive .overlay:hover {
+    opacity: 0;
 }
 
 
