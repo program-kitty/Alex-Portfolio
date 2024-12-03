@@ -5,3 +5,26 @@
 #robonyan-nuke {
     object-position: left;
 }
+
+.art-dropdown {
+    display: inline;
+    
+}
+
+.art-folder h2.closed::after {
+    content: "+";
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    color: #008282;
+    right: 15px;
+}
+
+.art-folder h2.open::after {
+    content: "-";
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    color: #008282;
+    right: 15px;
+}
