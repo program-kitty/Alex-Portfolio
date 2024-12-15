@@ -30,32 +30,33 @@
         </nav>
     </header>
     <main>
-        <h1>Hex's Art Prices</h1>
-        <p>Prices are on a per-character basis</p>
-        <h2>H2 MARGIN REFERENCE</h2>
+        <h1>Art Prices</h1>
+        <p>Prices are on a per-character basis.</p>
+        <!-- <h2>H2 MARGIN REFERENCE</h2> -->
         <section class="flex-container text-container">
             <div>
                 <h2>Frame</h2>
-                <p class="input-div">
-                    <input type="radio" id="fullbody" name="art-frame" value="Fullbody">
+                <p class="input-div" oninput="updateCost()">
+                    <input class="commission-options" type="radio" id="fullbody" name="art-frame" value="30" checked>
                     <label for="fullbody">Fullbody</label>
                     $30 per character<br>
-                    <input type="radio" id="waist-up" name="art-frame" value="Waist-up">
-                    <label for="waist-up">Waist-up</label>
+                    <input class="commission-options" type="radio" id="waistUp" name="art-frame" value="20">
+                    <label for="waistUp">Waist-up</label>
                     $20 per character<br>
-                    <input type="radio" id="bust" name="art-frame" value="Head/Bust">
+                    <input class="commission-options" type="radio" id="bust" name="art-frame" value="10">
                     <label for="bust">Head</label>
                     $10 per character
                 </p>
                 <h2>Coloration</h2>
-                <p class="input-div">
-                    <input type="checkbox" id="color" name="art-coloration" value="Color">
+                <p class="input-div" oninput="updateCost()">
+                    <input class="commission-options" type="checkbox" id="color" name="art-coloration" value="10">
                     <label for="color">Colored Artpiece</label>
                     $10 per character<br>
-                    <input type="checkbox" id="shading" name="art-coloration" value="Shading">
+                    <input class="commission-options" type="checkbox" id="shading" name="art-coloration" value="15">
                     <label for="shading">Shaded Artpiece</label>
                     +$?? per character
                 </p>
+                
                 <!-- <h3>Number of characters:</h3>
                 <p>
                     <input type="number" name="Number of characters:" id="amountOfPeople">
@@ -68,8 +69,25 @@
                     Pencil brush, art will be a cleaned-up sketch. 10% discount on final cost.<br>
                 </p> -->
             </div>
-            <div class="desktop-only"><img src="assets/images/necoarc.jpg"></div>
+            <div class="desktop-only">
+                <img src="assets/images/necoarc.jpg">
+            </div>
         </section>
+
+        <section>
+            <h3 id="price-display">Total Cost: $30</h3>
+        </section>
+
+
+
+        <!-- Remember to include jQuery :) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+        <!-- jQuery Modal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+        
+        <script src="assets/js/javascript.js"></script>
     </main>
     <footer class="bottomnav">
         <!-- <a href="index.html">Back to HOME</a> -->

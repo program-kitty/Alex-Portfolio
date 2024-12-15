@@ -25,3 +25,21 @@ $('.art-folder').click( function() {
     $(this).children('h2').toggleClass("open")
     $(this).children('h2').toggleClass("closed")
 });
+
+
+// Commission Price
+function updateCost() {
+    // var price = document.getElementsByClassName('commission-options');
+    var selectedButtons = document.getElementsByClassName('commission-options');
+    var price = 0;
+    // var ele = document.getElementsByName('gender');
+    for (i = 0; i < selectedButtons.length; i++) {
+        if (selectedButtons[i].checked) {
+            console.log('Found a checked button.');
+            price = price + parseInt(selectedButtons[i].value);
+            console.log(selectedButtons[i].value);
+        }
+    }
+    document.getElementById('price-display').innerHTML = 'Total Cost: $' + price;
+    // $('#price-display').content(price);
+};
