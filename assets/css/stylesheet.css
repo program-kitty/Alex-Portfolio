@@ -102,6 +102,24 @@ input/*[type="radio"]*/:checked + label {
 }
 
 
+/* Fancy Button */
+button.fancy {
+    color: #F9F5FF;
+    border-color: #bbf0ff;
+    background-color: unset;
+    border-style: outset;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 4px;
+    padding: 0px 8px;
+}
+
+button.fancy:checked {
+    color: #F9F5FF;
+    background-color: #008282;
+    border-style: inset;
+}
+
 
 
 /* input:enabled {
@@ -143,6 +161,7 @@ header #topnav {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 /* Style the links inside the navigation bar */
@@ -339,7 +358,7 @@ nav svg {
 
 .sensitive {
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
 }
 
 .sensitive > *:first-child {
@@ -416,7 +435,31 @@ nav svg {
 
 
 
-/* Button Selector */
+/* Commission Form */
+#commission-form {
+    background-color: #008282;
+    color: #F9F5FF;
+    border-radius: 10px;
+    margin: 0px 50px;
+    padding: 8px;
+    align-content: space-between;
+    text-align: justify;
+}
+
+/* Commission Form */
+#commission-form input {
+    background-color: #F9F5FF;
+    color: #212121;
+    max-width: 100%;
+}
+
+/* Commission Form */
+#commission-form textarea {
+    background-color: #F9F5FF;
+    color: #212121;
+    width: 100%;
+    max-width: 100%;
+}
 
 
 
