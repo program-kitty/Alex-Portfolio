@@ -28,3 +28,12 @@
     color: #008282;
     right: 15px;
 }
+
+
+
+/* Portfolio Image Squish Prevention */
+@media (max-width: 780px) {
+    div.gallery * {
+        grid-column: span 1 !important;
+    }
+}
